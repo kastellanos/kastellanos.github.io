@@ -1,0 +1,90 @@
+
+.element{
+    color: #f00 ;
+}
+.start-here{
+    padding-top: 20px; 
+}
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+.container-fluid{
+    background: black;
+}
+.color-w {
+    color: white;
+}
+.color-g {
+    color: green;
+}
+.consola{
+    background: rgba(255, 0, 0, .5);
+    color: white;
+}
+
+.prompt {
+  white-space: nowrap;
+  color: #96b38a;
+  margin-right: 7px;
+  display: -webkit-box;
+  -webkit-box-pack: center;
+  -webkit-box-orient: vertical;
+  display: -moz-box;
+  -moz-box-pack: center;
+  -moz-box-orient: vertical;
+  display: box;
+  box-pack: center;
+  box-orient: vertical;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+.cmdline {
+  outline: none;
+  background-color: transparent;
+  margin: 0;
+  width: 100%;
+  font: inherit;
+  border: none;
+  color: inherit;
+}
+
+footer {
+    position: absolute;
+    
+    bottom: 0;
+    height: 60px;
+    
+}
+
+section {
+    text-align: justify;
+}
+
+.correcto {
+    visibility: hidden;
+    margin-top: 10px;
+}
+
+.incorrecto {
+    visibility: hidden;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title></title>
+    <meta name="description" content="">
+    <!--Es utilizado para que el navegador escale y se pueda hacer un responsive design -->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <!-- Titulo que aparece en la pestaña del navegador -->
+    <title>Crisis</title>
+    <!-- librerias auxiliares de css -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/vis.css">
+    <!-- Hoja de estilos que se utilza para toda la página web -->
+    <link rel="stylesheet" href="css/main.css">
+    <!-- librerias auxiliares de javascript -->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/typed.js"></script>
+    <script src="js/vis.js"></script>
+    <!-- Scripts que se utilza para toda la página web -->
+    <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="juego.js"></script>
+    <script src="nivel1.js"></script>
+  </head>
+<!-- Al cargar el cuerpo de la página, se llama la función que permite construir el recorrido del jugador. -->
+  <body onload="mapa1(); init();">
+
+    <div class="container start-here">
+      <div class="page-header">
+        <h1>Crisis de ingenieros</h1>
+        <p>Página creada antes de que el último ingeniero de Colombia desapareciera.</p>
+      </div>
+      <nav class="navbar navbar-default">
+        <div class="container">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">UNALCorporation</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li ><a href="index.html">Inicio</a></li>
+            <li class="active"><a href="juego.html">Juego</a></li>
+            <li><a href="creditos.html">Creditos</a></li> 
+            <li><a href="mapa.html">Mapa del sitio</a></li> 
+          </ul>
+        </div>
+      </nav>
+      <section class="col-md-4">
+        <h3>Detalles de la conexión</h3>
+        <div id="visualization"></div>
+        <p>Al empezar el juego notaste que la conexion se hizo a un servidor de Brasil.
+          Debes encontrar la clave para seguir avanzando en el juego.</p>
+          <label>Clave</label>
+          <input type="text" name="clave" id="clave">
+          <button class="btn btn-success" onclick="nivel1();">validar</button>
+
+          <div id="correcto" class="correcto">
+            Puedes pasar al siguiente nivel
+            <a class="btn btn-success" href="nivel2.html">Segundo nivel</a>
+
+
+          </div>
+          <div id="incorrecto" class="incorrecto">
+            Contraseña incorrecta, vuelve a intentarlo
+          </div>
+        </section>
+        <section class="col-md-2">
+        <h3>Nivel 1</h3>
+        El primero siempre es el más facil, descubre las diferencias y obten la clave secreta.
+        </section>
+        <section class="col-md-6">
+          
+          <div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:500px; height:354px">
+        <canvas id="canvas" width="500" height="354" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+        <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:500px; height:354px; position: absolute; left: 0px; top: 0px; display: block;">
+        </div>
+    </div>
+        </section>
+
+      </div>
+
+  </body>
+</html>

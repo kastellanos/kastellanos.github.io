@@ -1,0 +1,52 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/vis.css">
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/jquery.js"></script>
+        <script src="js/bootstrap.js"></script>
+        <script src="js/typed.js"></script>
+        <script src="js/main.js"></script>
+        <script src="js/vis.js"></script>
+    </head>
+    <body>
+        
+       <div id="visualization"></div>
+<script type="text/javascript">
+    // create an array with nodes
+    var nodes = [
+        {id: 1, label: 'Node 1'},
+        {id: 2, label: 'Node 2'},
+        {id: 3, label: 'Node 3'},
+        {id: 4, label: 'Node 4'},
+        {id: 5, label: 'Node 5'}
+    ];
+
+    // create an array with edges
+    var edges = [
+        {from: 1, to: 2},
+        {from: 1, to: 3},
+        {from: 2, to: 4},
+        {from: 2, to: 5}
+    ];
+
+    // create a network
+    var container = document.getElementById('visualization');
+    var data = {
+        nodes: nodes,
+        edges: edges
+    };
+    var network = new vis.Network(container, data, {});
+</script>
+
+    </body>
+</html>
