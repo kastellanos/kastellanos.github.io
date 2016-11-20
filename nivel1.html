@@ -10,20 +10,21 @@
     <!-- Titulo que aparece en la pestaña del navegador -->
     <title>Crisis</title>
     <!-- librerias auxiliares de css -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/vis.css">
+    <link rel="stylesheet" href="recursos/css/bootstrap.css">
+    <link rel="stylesheet" href="recursos/css/vis.css">
     <!-- Hoja de estilos que se utilza para toda la página web -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="recursos/css/main.css">
     <!-- librerias auxiliares de javascript -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/typed.js"></script>
-    <script src="js/vis.js"></script>
+    <script src="recursos/js/jquery.js"></script>
+    <script src="recursos/js/bootstrap.js"></script>
+    <script src="recursos/js/vis.js"></script>
     <!-- Scripts que se utilza para toda la página web -->
+    <script src="recursos/js/main.js"></script>
+    <!-- Scripts que se utilizan para el juego del nivel 2 -->
+    <!-- Estos son generados por Animate CC-->
     <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="juego.js"></script>
-    <script src="nivel1.js"></script>
+    <script src="recursos/archivos_animate_cc/juego.js"></script>
+    <script src="recursos/archivos_animate_cc/nivel1.js"></script>
   </head>
 <!-- Al cargar el cuerpo de la página, se llama la función que permite construir el recorrido del jugador. -->
   <body onload="mapa1(); init();">
@@ -41,7 +42,7 @@
           <ul class="nav navbar-nav">
             <li ><a href="index.html">Inicio</a></li>
             <li class="active"><a href="juego.html">Juego</a></li>
-            <li><a href="creditos.html">Creditos</a></li> 
+            <li><a href="creditos.html">Créditos</a></li> 
             <li><a href="mapa.html">Mapa del sitio</a></li> 
           </ul>
         </div>
@@ -71,7 +72,8 @@
         <section class="col-md-3 texto-wob utilitario">
         <h3>Nivel 1</h3>
         <div class="texto">
-        El primero siempre es el más facil, descubre las diferencias y obten la clave secreta.
+        <p>El primero siempre es el más facil, descubre las diferencias y obten la clave secreta.</p>
+        <p>Pista: Para encontrarlas debes hacer click en las diferencias que creas que tiene la imagen 2 respecto a la 1 y se activara un circulo rojo si acertaste.</p>
         </div>
         </section>
         <section class="col-md-5">
@@ -84,6 +86,22 @@
         </section>
 
       </div>
+    <footer class="footer">
+        <div class="footerContent">
 
+            <a href="index.html" >Inicio</a> |
+            <a href="juego.html" >Juego</a> |
+            <a href="creditos.html" >Créditos</a> |
+            <a href="mapa.html" >Mapa del sitio</a>
+
+            <div class="wrapper"></div>
+
+            <small>
+
+                <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">@Copyleft 2016, Andrés Felipe Castellanos Páez</a>
+            </small>
+        </div>
+
+    </footer>
   </body>
 </html>

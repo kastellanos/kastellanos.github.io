@@ -10,21 +10,20 @@
     <!-- Titulo que aparece en la pestaña del navegador -->
     <title>Crisis</title>
     <!-- librerias auxiliares de css -->
-    <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/vis.css">
+    <link rel="stylesheet" href="recursos/css/bootstrap.css">
+    <link rel="stylesheet" href="recursos/css/vis.css">
     <!-- Hoja de estilos que se utilza para toda la página web -->
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="recursos/css/main.css">
     <!-- librerias auxiliares de javascript -->
-    <script src="js/jquery.js"></script>
-    <script src="js/bootstrap.js"></script>
-    <script src="js/typed.js"></script>
-    <script src="js/vis.js"></script>
+    <script src="recursos/js/jquery.js"></script>
+    <script src="recursos/js/bootstrap.js"></script>
+    <script src="recursos/js/vis.js"></script>
     <!-- Scripts que se utilza para toda la página web -->
-    <script src="js/main.js"></script>
+    <script src="recursos/js/main.js"></script>
 
   </head>
 <!-- Al cargar el cuerpo de la página, se llama la función que permite construir el recorrido del jugador. -->
-  <body onload="mapa3()">
+  <body onload="mapa3();">
 
     <div class="container start-here">
       <div class="page-header">
@@ -39,7 +38,7 @@
           <ul class="nav navbar-nav">
             <li ><a href="index.html">Inicio</a></li>
             <li class="active"><a href="juego.html">Juego</a></li>
-            <li><a href="creditos.html">Creditos</a></li> 
+            <li><a href="creditos.html">Créditos</a></li> 
             <li><a href="mapa.html">Mapa del sitio</a></li> 
           </ul>
         </div>
@@ -71,14 +70,15 @@
           <div class="texto">
             <p>El hacker estaba muy confiado en los dos niveles anteriores pero en este se puso serio.</p>
             <p>Debes descifrar la última clave, la cual está doblemente cifrada con un algoritmo que nadie es capaz de romper, pero tú lo debes hacer por el bien de Colombia.</p>
-            <p> Como pista el hacker dejo la palabra rot13 y una <a href="https://es.wikipedia.org/wiki/ROT13">página web </a> y una herramienta que le ayudaba a romper cualquier sistema criptográfico. </p>
+            <p> Como pista el hacker dejo la palabra rot13, una <a href="https://es.wikipedia.org/wiki/ROT13">página web </a> y una herramienta que le ayudaba a romper cualquier sistema criptográfico. </p>
             </div>
             
 
         </section>
         <section class="col-md-4 utilitario">
-        <div class="texto">
+        
             <h3>Herramienta</h3>
+            <div class="texto">
             <h4>El texto cifrado es:</h4>
             <p>Fbyb gvrarf dhr ibyire n ncyvpne yn qrpbqvsvpnpvba n yn fvthvragr senfr creb pba ha pbeevzvragb qr bapr: Nc encxg gu: AqUqaGnOglqtJcemgt</p>
 
@@ -102,6 +102,22 @@
             </div>
         </section>
       </div>
+    <footer class="footer">
+        <div class="footerContent">
 
+            <a href="index.html" >Inicio</a> |
+            <a href="juego.html" >Juego</a> |
+            <a href="creditos.html" >Créditos</a> |
+            <a href="mapa.html" >Mapa del sitio</a>
+
+            <div class="wrapper"></div>
+
+            <small>
+
+                <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">@Copyleft 2016, Andrés Felipe Castellanos Páez</a>
+            </small>
+        </div>
+
+    </footer>
   </body>
 </html>
