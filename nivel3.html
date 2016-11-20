@@ -44,28 +44,63 @@
           </ul>
         </div>
       </nav>
-      <section class="col-md-4">
+      <section class="col-md-4 utilitario">
         <h3>Detalles de la conexión</h3>
         <div id="visualization"></div>
-        <p>La conexion se tardó mucho en responder, usando metricas de un viejo libro de Tito, se encontro que el nuevo servidor puente está en Finlandia.</p>
+        <div class="texto-wob">
+        <p>Al conectarse al nuevo servidor para acabar con el último juego se descubrió que porfin estaba en 
+        el servidor chino ya que el idioma operativo tenía simbolos extraños y fotos de sitios con mucha polución.</p>
           <label>Clave</label>
           <input type="text" name="clave" id="clave">
           <button class="btn btn-success" onclick="nivel3();">validar</button>
 
           <div id="correcto" class="correcto">
-            Puedes pasar al siguiente nivel
-            <a class="btn btn-success" href="nivel4.html">Cuarto nivel</a>
+            <p>Felicitaciones, lograste entrar al servidor Chino, recuperar el antidoto y descubrir a los paises que colaboraron con el hacker. Si quieres saber como terminó la historia usa el boton final.</p>
+            <a class="btn btn-success" href="final.html">Historia final</a>
+            
 
 
           </div>
           <div id="incorrecto" class="incorrecto">
             Contraseña incorrecta, vuelve a intentarlo
           </div>
+          </div>
         </section>
-        <section class="col-md-8">
+        <section class="col-md-4 utilitario">
           <h3>Nivel 3</h3>
-        </section>
+          <div class="texto">
+            <p>El hacker estaba muy confiado en los dos niveles anteriores pero en este se puso serio.</p>
+            <p>Debes descifrar la última clave, la cual está doblemente cifrada con un algoritmo que nadie es capaz de romper, pero tú lo debes hacer por el bien de Colombia.</p>
+            <p> Como pista el hacker dejo la palabra rot13 y una <a href="https://es.wikipedia.org/wiki/ROT13">página web </a> y una herramienta que le ayudaba a romper cualquier sistema criptográfico. </p>
+            </div>
+            
 
+        </section>
+        <section class="col-md-4 utilitario">
+        <div class="texto">
+            <h3>Herramienta</h3>
+            <h4>El texto cifrado es:</h4>
+            <p>Fbyb gvrarf dhr ibyire n ncyvpne yn qrpbqvsvpnpvba n yn fvthvragr senfr creb pba ha pbeevzvragb qr bapr: Nc encxg gu: AqUqaGnOglqtJcemgt</p>
+
+            <div class="separator">
+            <label>Corrimiento(entre 0 y 26): </label><input  id="shift_input" type="number" name="caesarin" min="0" max="26" value="0" />
+            </div>
+            <label>Entrada: </label>
+            <div class="separator">
+            
+
+            <textarea id="caesar_input"  rows="4" cols="35"></textarea>
+            </div>
+
+            
+            <label>Salida: </label>
+            <div class="separator">
+            
+            <textarea id="caesar_output"  rows="4" cols="35"></textarea>
+            <button class="btn btn-success" onclick="caesar();">Aplicar Sustitución</button>
+            </div>
+            </div>
+        </section>
       </div>
 
   </body>

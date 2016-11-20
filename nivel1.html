@@ -46,14 +46,15 @@
           </ul>
         </div>
       </nav>
-      <section class="col-md-4">
+      <section class="col-md-4 utilitario">
         <h3>Detalles de la conexión</h3>
         <div id="visualization"></div>
+        <div class="texto-wob">
         <p>Al empezar el juego notaste que la conexion se hizo a un servidor de Brasil.
           Debes encontrar la clave para seguir avanzando en el juego.</p>
           <label>Clave</label>
           <input type="text" name="clave" id="clave">
-          <button class="btn btn-success" onclick="nivel1();">validar</button>
+          <button id="verifier" class="btn btn-success" onclick="nivel1();">validar</button>
 
           <div id="correcto" class="correcto">
             Puedes pasar al siguiente nivel
@@ -64,12 +65,16 @@
           <div id="incorrecto" class="incorrecto">
             Contraseña incorrecta, vuelve a intentarlo
           </div>
+          </div>
         </section>
-        <section class="col-md-2">
+        
+        <section class="col-md-3 texto-wob utilitario">
         <h3>Nivel 1</h3>
+        <div class="texto">
         El primero siempre es el más facil, descubre las diferencias y obten la clave secreta.
+        </div>
         </section>
-        <section class="col-md-6">
+        <section class="col-md-5">
           
           <div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:500px; height:354px">
         <canvas id="canvas" width="500" height="354" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>

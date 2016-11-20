@@ -1,5 +1,5 @@
-<!doctype html>
-<html class="no-js" lang="">
+<!DOCTYPE html>
+<html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -10,43 +10,81 @@
         <!-- Place favicon.ico in the root directory -->
 
         <link rel="stylesheet" href="css/bootstrap.css">
-        <link rel="stylesheet" href="css/vis.css">
         <link rel="stylesheet" href="css/main.css">
         <script src="js/jquery.js"></script>
         <script src="js/bootstrap.js"></script>
-        <script src="js/typed.js"></script>
         <script src="js/main.js"></script>
-        <script src="js/vis.js"></script>
+        
     </head>
     <body>
         
-       <div id="visualization"></div>
-<script type="text/javascript">
-    // create an array with nodes
-    var nodes = [
-        {id: 1, label: 'Node 1'},
-        {id: 2, label: 'Node 2'},
-        {id: 3, label: 'Node 3'},
-        {id: 4, label: 'Node 4'},
-        {id: 5, label: 'Node 5'}
-    ];
+        <div class="container start-here">
+            <div class="page-header">
+                <h1>Crisis de ingenieros</h1>
+                <p>Página creada antes de que el último ingeniero de Colombia desapareciera.</p>
+            </div>
+      <nav class="font-ad navbar navbar-default">
+          <div class="container">
+            <div class="navbar-header">
+              <a class=" navbar-brand" href="index.html">UNALCorporation</a>
+            </div>
+            <ul class="nav navbar-nav">
+              <li ><a href="index.html">Inicio</a></li>
+              <li ><a href="juego.html">Juego</a></li>
+              <li class="active"><a href="creditos.html">Creditos</a></li> 
+              <li ><a href="mapa.html">Mapa del sitio</a></li> 
+            </ul>
+          </div>
+        </nav>
+            <div class="corrimiento font-ad">
+            <h2>Créditos</h2>
+            </div>
+            <section class="col-md-12 utilitario">
+                <h3>Autor de la página</h3>
+                <div class="texto">
+                    <b>Nombre :</b> Andrés Felipe Castellanos Páez 
+                    <div class="wrapper"></div>
+                    <b>Materia :</b> Gráfica interactiva
+                    <div class="wrapper"></div>
+                    <b>Carrera :</b> Estudiante de ingeniería de Sistemas y Computación
+                    <div class="wrapper"></div>
+                    <b>Universidad :</b> Universidad Nacional de Colombia, sede Bogotá.
+                </div>
 
-    // create an array with edges
-    var edges = [
-        {from: 1, to: 2},
-        {from: 1, to: 3},
-        {from: 2, to: 4},
-        {from: 2, to: 5}
-    ];
+                
+            </section>
+            <section class="col-md-12 utilitario">
+            
+            <h3>Fuentes</h3>
+            <div class="texto">
+                <ul>
+                <li>Tipografía: Copyright (c) 2011, Matthew Desmond (http://www.madtype.com | mattdesmond@gmail.com),with Reserved Font Name Aldrich.</li>
+                <li>Imagen juego nivel 1: http://www.losbloguitos.com/2012/03/encuentra-las-diferencias_26.html</li>
+                <li>Imágen juego nivel 2: http://f.tqn.com/y/puzzles/1/S/v/c/sudokue73.gif</li>
+                <li>Icono de las listas: http://www.coueswhitetail.com/forums/public/style_images/club_3_4/icon_check.png</li>
+                <li>Bootstrap: http://getbootstrap.com/</li>
+                <li>Vis JS: http://visjs.org/</li>
+                </ul>
+                </div>
+            </section>
+            
+        </div>
+    <footer class="footer">
+        <div class="footerContent">
 
-    // create a network
-    var container = document.getElementById('visualization');
-    var data = {
-        nodes: nodes,
-        edges: edges
-    };
-    var network = new vis.Network(container, data, {});
-</script>
+            <a href="index.html" >Inicio</a> |
+            <a href="juego.html" >Juego</a> |
+            <a href="creditos.html" >Créditos</a> |
+            <a href="mapa.html" >Mapa del sitio</a>
 
+            <div class="wrapper"></div>
+
+            <small>
+
+                <a rel="license" href="https://creativecommons.org/licenses/by/4.0/">@Copyleft 2016, Andrés Felipe Castellanos Páez</a>
+            </small>
+        </div>
+
+    </footer>
     </body>
 </html>

@@ -20,11 +20,14 @@
     <script src="js/typed.js"></script>
     <script src="js/vis.js"></script>
     <!-- Scripts que se utilza para toda la página web -->
+    <script src="https://code.createjs.com/createjs-2015.11.26.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="juego2.js"></script>
+    <script src="nivel2.js"></script>
 
   </head>
 <!-- Al cargar el cuerpo de la página, se llama la función que permite construir el recorrido del jugador. -->
-  <body onload="mapa2()">
+  <body onload="mapa2(); init();">
 
     <div class="container start-here">
       <div class="page-header">
@@ -44,13 +47,14 @@
           </ul>
         </div>
       </nav>
-      <section class="col-md-4">
+      <section class="col-md-4 utilitario">
         <h3>Detalles de la conexión</h3>
         <div id="visualization"></div>
+        <div class="texto-wob">
         <p>La conexion se tardó mucho en responder, usando metricas de un viejo libro de Tito, se encontro que el nuevo servidor puente está en Finlandia.</p>
           <label>Clave</label>
           <input type="text" name="clave" id="clave">
-          <button class="btn btn-success" onclick="nivel2();">validar</button>
+          <button id="verifier" class="btn btn-success" onclick="nivel2();">validar</button>
 
           <div id="correcto" class="correcto">
             Puedes pasar al siguiente nivel
@@ -61,9 +65,15 @@
           <div id="incorrecto" class="incorrecto">
             Contraseña incorrecta, vuelve a intentarlo
           </div>
+          </div>
         </section>
-        <section class="col-md-8">
+        <section class="col-md-8 utilitario">
           <h3>Nivel 2</h3>
+          <div id="animation_container" style="background-color:rgba(255, 255, 255, 1.00); width:500px; height:354px">
+    <canvas id="canvas" width="500" height="354" style="position: absolute; display: block; background-color:rgba(255, 255, 255, 1.00);"></canvas>
+    <div id="dom_overlay_container" style="pointer-events:none; overflow:hidden; width:500px; height:354px; position: absolute; left: 0px; top: 0px; display: block;">
+    </div>
+  </div>
         </section>
 
       </div>
